@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "abcea3de-ad57-4c5f-baaf-49af94a11487",
+		"name": "CLIENTES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21774175"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nome\": \"Jaque\",\n    \"idade\": 27,\n    \"email\": \"jaque.cavalaro@teste.com\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findAllClients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findAllClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n    \"nome\": \"Jaqui\",\n    \"idade\": 25\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/updateClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"updateClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_BY_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/removeClientById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"removeClientById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
